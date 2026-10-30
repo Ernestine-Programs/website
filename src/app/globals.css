@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; color-scheme: dark; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body { @apply bg-ink text-fg antialiased; }
+:focus-visible { outline: 2px solid #5B8CFF; outline-offset: 3px; border-radius: 6px; }
+.grid-bg { background-image: linear-gradient(to right,#ffffff0a 1px,transparent 1px),linear-gradient(to bottom,#ffffff0a 1px,transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse 70% 60% at 50% 0%,#000 30%,transparent 100%); -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%,#000 30%,transparent 100%); }
+.spot { background: radial-gradient(360px circle at var(--mx,50%) var(--my,0%), #5B8CFF1f, transparent 60%); }
