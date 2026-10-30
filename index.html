@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ernestine Programs | Developer collective</title>
+<meta name="description" content="An independent collective of developers designing, building and shipping software together.">
+<meta property="og:title" content="Ernestine Programs">
+<meta property="og:description" content="An independent collective of developers designing, building and shipping software together.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07080a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Crect width='22' height='22' rx='6' fill='%230e1013'/%3E%3Cpath d='M6 7h7M6 11h5M6 15h7' stroke='%235b8cff' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="wrap bar" aria-label="Primary">
+    <a href="#home" class="logo" aria-label="Home">
+      <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="1" width="20" height="20" rx="6" fill="#0e1013" stroke="#2b3038"/><path d="M6 7h7M6 11h5M6 15h7" stroke="#5b8cff" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="11" r="1.6" fill="#3dd6f5"/></svg>
+      <span data-name>Ernestine Programs</span>
+    </a>
+    <div class="links"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#team">Team</a><a href="#contact">Contact</a></div>
+    <div class="right">
+      <a class="btn ghost sm" data-gh target="_blank" rel="noreferrer" href="https://github.com/Ernestine-Programs">GitHub</a>
+      <button id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+  <div id="mobile"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#team">Team</a><a href="#contact">Contact</a><a data-gh target="_blank" rel="noreferrer" href="https://github.com/Ernestine-Programs">GitHub</a></div>
+</header>
+<main id="main">
+  <section id="home" class="hero">
+    <div class="grid-bg" aria-hidden="true"></div><div class="glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <h1 class="rise">Building Ideas Into Reality.</h1>
+        <p class="lead rise d1">We are an independent collective of developers working together to design, build and ship software that makes a difference.</p>
+        <div class="cta rise d2">
+          <a class="btn solid" data-gh target="_blank" rel="noreferrer" href="https://github.com/Ernestine-Programs">View on GitHub</a>
+          <a class="btn ghost" href="#projects">Explore projects</a>
+        </div>
+      </div>
+      <div class="graphic">
+        <svg viewBox="0 0 480 420" role="img" aria-label="Four development branches merging into one main line">
+          <defs><linearGradient id="mg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset="1" stop-color="#3dd6f5"/></linearGradient></defs>
+          <g fill="none" stroke-width="2" stroke-linecap="round" opacity=".85" pathLength="1">
+            <path class="draw" pathLength="1" style="animation-delay:.2s" stroke="#5b8cff" d="M10 70C120 70 160 210 260 210"/>
+            <path class="draw" pathLength="1" style="animation-delay:.35s" stroke="#8b7bff" d="M10 140C90 140 130 210 260 210"/>
+            <path class="draw" pathLength="1" style="animation-delay:.5s" stroke="#5b8cff" d="M10 280C90 280 130 210 260 210"/>
+            <path class="draw" pathLength="1" style="animation-delay:.65s" stroke="#3dd6f5" d="M10 350C120 350 160 210 260 210"/>
+          </g>
+          <g fill="#07080a" stroke-width="2">
+            <circle cx="10" cy="70" r="5" stroke="#5b8cff"/><circle cx="120" cy="105" r="5" stroke="#5b8cff"/>
+            <circle cx="10" cy="140" r="5" stroke="#8b7bff"/><circle cx="95" cy="160" r="5" stroke="#8b7bff"/>
+            <circle cx="10" cy="280" r="5" stroke="#5b8cff"/><circle cx="95" cy="258" r="5" stroke="#5b8cff"/>
+            <circle cx="10" cy="350" r="5" stroke="#3dd6f5"/><circle cx="120" cy="315" r="5" stroke="#3dd6f5"/>
+          </g>
+          <path class="draw" pathLength="1" style="animation-delay:1.3s" d="M260 210H460" stroke="url(#mg)" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <g fill="#07080a" stroke="#3dd6f5" stroke-width="2.5">
+            <circle class="pop" style="animation-delay:1.6s" cx="260" cy="210" r="6"/><circle class="pop" style="animation-delay:1.72s" cx="330" cy="210" r="6"/>
+            <circle class="pop" style="animation-delay:1.84s" cx="400" cy="210" r="6"/><circle class="pop" style="animation-delay:1.96s" cx="460" cy="210" r="6"/>
+          </g>
+          <g fill="#8b909c" font-family="ui-monospace,Consolas,monospace" font-size="12"><text x="270" y="190">main</text><text x="14" y="52">feat/idea</text><text x="14" y="376">fix/details</text></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="s"><div class="wrap">
+    <h2>What we are building.</h2><p class="intro">A selection of our work. Each card links to its repository.</p>
+    <div class="body cards" id="cards"></div>
+  </div></section>
+
+  <section id="about" class="s"><div class="wrap">
+    <h2>A Collective of Builders.</h2>
+    <div class="body two">
+      <p>We are a group of friends who write software together. We share an interest in programming, new technology and the satisfaction of seeing an idea run for the first time.</p>
+      <p>We review each other&rsquo;s code, try tools we have not used before, and keep what works. Some projects become products. Others are experiments that teach us something. All of them are built in the open when we can.</p>
+    </div>
+    <div class="cells">
+      <div class="cell"><h3>Collaboration</h3><p>Shared repos, pull requests and honest code review.</p></div>
+      <div class="cell"><h3>Continuous learning</h3><p>We pick up new stacks by building with them.</p></div>
+      <div class="cell"><h3>Experimentation</h3><p>Small prototypes first, then the ones that earn it ship.</p></div>
+    </div>
+  </div></section>
+
+  <section id="tech" class="s"><div class="wrap">
+    <h2>The tools we work with.</h2>
+    <div class="body"><div class="cells tech" id="tech-list"></div></div>
+  </div></section>
+
+  <section id="team" class="s"><div class="wrap">
+    <h2>The People Behind the Code.</h2>
+    <ul class="body team" id="team-list"></ul>
+  </div></section>
+
+  <section id="github" class="wrap">
+    <div class="gh">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5b8cff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 7.5v9M18 11.5c0 4-12 2-12 5"/></svg>
+      <h2>Built Together. Shared With Everyone.</h2>
+      <p>Browse our repositories, read the code, open an issue or send a pull request.</p>
+      <a class="btn solid" data-gh target="_blank" rel="noreferrer" href="https://github.com/Ernestine-Programs">Visit our GitHub organisation</a>
+    </div>
+  </section>
+
+  <section id="contact" class="s"><div class="wrap">
+    <h2>Have Something in Mind?</h2><p class="intro">Tell us about an idea, a collaboration or a question. We read everything.</p>
+    <div class="body row" id="contact-list"></div>
+  </div></section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div><span class="logo"><span data-name>Ernestine Programs</span></span><p data-desc>An independent collective of developers.</p></div>
+    <ul><li><a href="#home">Home</a></li><li><a href="#projects">Projects</a></li><li><a href="#about">About</a></li><li><a href="#team">Team</a></li><li><a href="#contact">Contact</a></li><li><a data-gh target="_blank" rel="noreferrer" href="https://github.com/Ernestine-Programs">GitHub</a></li></ul>
+  </div>
+  <p class="wrap copy">&copy; <span id="year"></span> <span data-name>Ernestine Programs</span>. All rights reserved.</p>
+</footer>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
