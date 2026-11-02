@@ -1,1 +1,1 @@
-Website at https://ernestine-programs.github.io/website/ . Currently just a template to be filled in. Made with Claude.
+Website at https://ernestine-programs.github.io/website/ . A work in progress.
