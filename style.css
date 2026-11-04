@@ -99,6 +99,11 @@ li::marker{
     color:#2d539e;
 }
 
+.no-underline-bold{
+    text-decoration: none;
+    font-size:1.25rem;
+}
+
 .dark-blue-border{
     border:#2d539e solid 5px;
 }
